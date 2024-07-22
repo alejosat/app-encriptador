@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Encriptor</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/img/Vector.png" type="image/x-icon">
+</head>
+<body>
+    <head></head>
+    <main class="main">
+        <section class="main__container">
+            <div class="main__container__image">
+                <img src="./assets/img/Vector.png" alt="Logo app" class="main__container__image__logo">
+            </div>
+            <div class="main__container__text__container">
+                <textarea  cols="30" rows="10" id="container__input" class="main__container__text__input" placeholder="Ingrese un texto aqui"></textarea>
+            </div>
+            <div class="main__container__controls">
+                <div class="container__span">
+                    <span class="main__container__controls__info">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Solo letras minusculas y sin acentos.
+                    </span>
+                </div>
+                <button class="main__container__controls__button encrypt" id="encrypt-button">Encrypt</button>
+                <button class="main__container__controls__button decrypt" id="decrypt-button">Decrypt</button>
+            </div>
+        </section>
+        <section class="main__container__text__output">
+            <div class="main__container__text__output_textarea">
+                <textarea id="container__output" class="main__container__text__textarea__output" placeholder="Ningún mensaje fue encontrado" disabled>
+                </textarea>
+            </div>
+            <div class="main__container__controls__output">
+                <button class="main__container__controls__output__button">Copy</button>
+            </div>
+            </textarea>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://kit.fontawesome.com/3efa02751f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
