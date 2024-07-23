@@ -8,35 +8,42 @@
     <link rel="shortcut icon" href="./assets/img/Vector.png" type="image/x-icon">
 </head>
 <body>
-    <head></head>
     <main class="main">
         <section class="main__container">
             <div class="main__container__image">
                 <img src="./assets/img/Vector.png" alt="Logo app" class="main__container__image__logo">
             </div>
             <div class="main__container__text__container">
-                <textarea  cols="30" rows="10" id="container__input" class="main__container__text__input" placeholder="Ingrese un texto aqui"></textarea>
+                <textarea cols="30" rows="10" id="inputText" class="main__container__text__input" placeholder="Ingrese un texto aqui"></textarea>
+            </div>
+            <div class="container__span">
+                <span class="main__container__controls__info">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Solo letras minusculas y sin acentos.
+                </span>
             </div>
             <div class="main__container__controls">
-                <div class="container__span">
-                    <span class="main__container__controls__info">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        Solo letras minusculas y sin acentos.
-                    </span>
-                </div>
-                <button class="main__container__controls__button encrypt" id="encrypt-button">Encrypt</button>
-                <button class="main__container__controls__button decrypt" id="decrypt-button">Decrypt</button>
+                <button class="main__container__controls__button encrypt" id="encrypt-button" onclick="encriptarTexto()">
+                    <i class="fa-solid fa-user-secret"></i>
+                    Encrypt
+                </button>
+                <button class="main__container__controls__button decrypt" id="decrypt-button" onclick="desencriptarTexto()">
+                    <i class="fa-solid fa-gear"></i>
+                    Decrypt
+                </button>
             </div>
         </section>
         <section class="main__container__text__output">
-            <div class="main__container__text__output_textarea">
-                <textarea id="container__output" class="main__container__text__textarea__output" placeholder="Ningún mensaje fue encontrado" disabled>
-                </textarea>
+            <img id="imageContainer" src="./assets/img/figura.png" alt="logo textarea">
+            <div class="textarea-container">
+                <textarea id="outputText" class="main__container__text__textarea__output" placeholder="Ningún mensaje fue encontrado"></textarea>
             </div>
             <div class="main__container__controls__output">
-                <button class="main__container__controls__output__button">Copy</button>
+                <button class="main__container__controls__output__button" onclick="copiarTexto()">
+                    <i class="fa-regular fa-copy"></i>
+                    Copy
+                </button>
             </div>
-            </textarea>
         </section>
     </main>
     <footer></footer>
