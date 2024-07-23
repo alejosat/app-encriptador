@@ -226,7 +226,7 @@ body {
 
     .main__container__text__output {
         display: flex;
-        height: 100vh;
+        height: auto;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
