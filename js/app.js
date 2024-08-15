@@ -73,9 +73,10 @@ function desencriptarTexto() {
 }
 
 function copiarTexto() {
-    const outputTexto = document.getElementById("outputText");
-    outputTexto.select();
-    document.execCommand("copy");
+    const outputTexto = document.getElementById("outputText").value;
+    // outputTexto.select();
+    // document.execCommand("copy");
+    navigator.clipboard.writeText(outputTexto);
     Swal.fire({
         icon: 'success',
         title: 'Éxito',
