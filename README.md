@@ -34,4 +34,4 @@ Un botón que copie el texto encriptado/desencriptado para la sección de transf
 
 # visit site:
 
-<a src="https://alejosat.github.io/app-encriptador/" target="_blank">Ver demo</a>
+<a href="https://alejosat.github.io/app-encriptador/" target="_blank">Ver demo</a>
